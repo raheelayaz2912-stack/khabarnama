@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #0a0e16;
+  color: #edeae1;
+}
+
+/* Visible, deliberate focus states everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #c4212e;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Urdu typography: generous, comfortable, RTL by default */
+[dir="rtl"],
+.urdu {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--font-urdu), "Noto Nastaliq Urdu", serif;
+  line-height: 2.35;
+  letter-spacing: 0;
+  unicode-bidi: isolate;
+}
+
+.urdu-heading {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--font-urdu), "Noto Nastaliq Urdu", serif;
+  line-height: 1.9;
+}
+
+/* Prevent Urdu from overlapping or breaking layout at small sizes */
+.urdu p {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+/* The seam: the signature divider element joining the English and Urdu editions */
+.seam {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.75rem 0;
+}
+
+.seam::before,
+.seam::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 0;
+  border-top: 1px dashed #3a4560;
+}
+
+.seam-badge {
+  flex: 0 0 auto;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f0ce7b;
+  background: #241b0b;
+  border: 1px solid #4a3a17;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  white-space: nowrap;
+}
+
+/* Breaking-news ticker track */
+.ticker-track {
+  display: inline-flex;
+  width: max-content;
+}
