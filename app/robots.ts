@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://khabarnama.vercel.app/sitemap.xml",
+    sitemap: "https://khabarx.vercel.app/sitemap.xml",
   };
 }

@@ -6,7 +6,7 @@ export function BreakingBar() {
   const items = [...latest, ...latest]; // duplicate for a seamless loop
 
   return (
-    <div className="bg-green text-paper">
+    <div className="bg-green text-white">
       <div className="mx-auto max-w-shell flex items-stretch overflow-hidden">
         <div className="flex-none flex items-center gap-2 bg-green-deep px-3 sm:px-4 py-2">
           <span className="h-1.5 w-1.5 rounded-full bg-brass animate-pulse" aria-hidden="true" />

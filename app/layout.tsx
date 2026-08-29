@@ -36,16 +36,16 @@ const urdu = Noto_Nastaliq_Urdu({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://khabarnama.vercel.app"),
+  metadataBase: new URL("https://khabarx.vercel.app"),
   title: {
-    default: "Khabarnama | خبرنامہ — Pakistan News in English & Urdu",
-    template: "%s | Khabarnama",
+    default: "KHABARX | خبر ایکس — Pakistan News in English & Urdu",
+    template: "%s | KHABARX",
   },
   description:
     "Bilingual Pakistan and world news. Every story, reported once, told in English and Urdu, side by side.",
   openGraph: {
     type: "website",
-    siteName: "Khabarnama",
+    siteName: "KHABARX",
   },
 };
 
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className="font-body bg-paper text-ink antialiased">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-ink focus:text-paper focus:px-4 focus:py-2 focus:rounded"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-green focus:text-white focus:px-4 focus:py-2 focus:rounded"
         >
           Skip to main content
         </a>

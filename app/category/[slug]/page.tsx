@@ -32,7 +32,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!category) return {};
   return {
     title: `${category} News`,
-    description: `Latest ${category} news from Khabarnama, reported in English and Urdu.`,
+    description: `Latest ${category} news from KHABARX, reported in English and Urdu.`,
   };
 }
 

@@ -9,26 +9,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#14171C",
-        paper: "#FAF9F5",
-        "paper-dim": "#F1EFE8",
+        // "ink" = body text. Now a warm off-white for the dark theme.
+        ink: "#EDEAE1",
+        // "paper" = page background. Now near-black navy.
+        paper: "#0A0E16",
+        "paper-dim": "#131A29",
+        // "green" = primary accent (buttons, active states, link hover).
+        // Repurposed to the brand red from the KHABARX mockup.
         green: {
-          DEFAULT: "#145A32",
-          deep: "#0B3B21",
-          soft: "#E7EFE9",
+          DEFAULT: "#C4212E",
+          deep: "#8F1620",
+          soft: "#2A1013",
         },
+        // Brand gold — logo, category labels, breaking-news dot.
         brass: {
-          DEFAULT: "#B8862B",
-          deep: "#8C6420",
-          soft: "#F5ECD8",
+          DEFAULT: "#D8A93D",
+          deep: "#F0CE7B",
+          soft: "#241B0B",
         },
         line: {
-          DEFAULT: "#E3E0D8",
-          strong: "#C9C4B7",
+          DEFAULT: "#232B3C",
+          strong: "#3A4560",
         },
         brick: {
-          DEFAULT: "#B23A2E",
-          deep: "#8A2C22",
+          DEFAULT: "#C4212E",
+          deep: "#8F1620",
         },
       },
       fontFamily: {

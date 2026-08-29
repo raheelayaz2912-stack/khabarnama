@@ -49,11 +49,11 @@ export default function HomePage() {
             <p className="mt-3 text-ink/70 leading-relaxed">{lead.englishSummary}</p>
 
             <div className="my-4 flex items-center gap-3">
-              <span className="h-px flex-1 bg-line-strong" style={{ borderTop: "1px dashed #C9C4B7" }} />
+              <span className="h-px flex-1 bg-line-strong" style={{ borderTop: "1px dashed #3A4560" }} />
               <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-brass-deep bg-brass-soft border border-brass/40 rounded-full px-2.5 py-1">
                 اردو
               </span>
-              <span className="h-px flex-1 bg-line-strong" style={{ borderTop: "1px dashed #C9C4B7" }} />
+              <span className="h-px flex-1 bg-line-strong" style={{ borderTop: "1px dashed #3A4560" }} />
             </div>
 
             <Link href={`/news/${lead.slug}#urdu`}>

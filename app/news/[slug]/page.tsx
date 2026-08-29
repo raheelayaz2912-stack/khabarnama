@@ -9,7 +9,7 @@ import { LanguageSeam } from "@/components/LanguageSeam";
 import { NewsCard } from "@/components/NewsCard";
 import { ShareButtons } from "@/components/ShareButtons";
 
-const SITE_URL = "https://khabarnama.vercel.app";
+const SITE_URL = "https://khabarx.vercel.app";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -59,7 +59,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     author: { "@type": "Organization", name: article.author },
     publisher: {
       "@type": "Organization",
-      name: "Khabarnama",
+      name: "KHABARX",
       logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },

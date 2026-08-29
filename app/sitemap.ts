@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
 
-const SITE_URL = "https://khabarnama.vercel.app";
+const SITE_URL = "https://khabarx.vercel.app";
 
 const CATEGORY_SLUGS = ["pakistan", "punjab", "lahore", "world", "business", "technology", "sports"];
 

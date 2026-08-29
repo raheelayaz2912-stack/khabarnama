@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html {
@@ -25,8 +25,8 @@ html {
 }
 
 body {
-  background-color: #faf9f5;
-  color: #14171c;
+  background-color: #0a0e16;
+  color: #edeae1;
 }
 
 /* Visible, deliberate focus states everywhere */
@@ -34,7 +34,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid #145a32;
+  outline: 2px solid #c4212e;
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -78,7 +78,7 @@ input:focus-visible,
   content: "";
   flex: 1 1 auto;
   height: 0;
-  border-top: 1px dashed #c9c4b7;
+  border-top: 1px dashed #3a4560;
 }
 
 .seam-badge {
@@ -87,9 +87,9 @@ input:focus-visible,
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8c6420;
-  background: #f5ecd8;
-  border: 1px solid #e6d6ae;
+  color: #f0ce7b;
+  background: #241b0b;
+  border: 1px solid #4a3a17;
   border-radius: 999px;
   padding: 0.35rem 0.9rem;
   white-space: nowrap;

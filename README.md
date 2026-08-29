@@ -1,4 +1,4 @@
-# Khabarnama — Bilingual (English + Urdu) News Site
+# KHABARX — Bilingual (English + Urdu) News Site
 
 A working Next.js 14 + Tailwind CSS prototype of the bilingual news experience:
 **one story, one image, English article, a divider, Urdu article — all on one page.**

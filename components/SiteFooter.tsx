@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LogoMark } from "./LogoMark";
 
 const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
   {
@@ -38,11 +39,16 @@ export function SiteFooter() {
       <div className="mx-auto max-w-shell px-4 sm:px-6 py-12">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           <div className="col-span-2 sm:col-span-1">
-            <div className="flex items-baseline gap-2">
-              <span className="font-display text-xl font-semibold text-ink">Khabarnama</span>
-              <span className="font-urdu text-lg text-green" dir="rtl">خبرنامہ</span>
+            <div className="flex items-center gap-2">
+              <LogoMark className="h-7 w-7" />
+              <span className="font-display text-lg font-bold text-ink">
+                KHABAR<span className="text-brass">X</span>
+              </span>
             </div>
-            <p className="mt-3 text-sm text-ink/60 leading-relaxed max-w-[22ch]">
+            <p className="mt-3 font-urdu text-base text-brass/80" dir="rtl">
+              خبر، ابھی، بر جگہ
+            </p>
+            <p className="mt-2 text-sm text-ink/50 leading-relaxed max-w-[24ch]">
               One story. One image. English and Urdu, side by side.
             </p>
           </div>
@@ -64,8 +70,8 @@ export function SiteFooter() {
           ))}
         </div>
         <div className="mt-10 pt-6 border-t border-line flex flex-col sm:flex-row justify-between gap-3 text-xs text-ink/45">
-          <p>© 2026 Khabarnama. All rights reserved.</p>
-          <p className="font-urdu" dir="rtl">© ۲۰۲۶ خبرنامہ۔ جملہ حقوق محفوظ ہیں۔</p>
+          <p>© 2026 KHABARX. All rights reserved.</p>
+          <p className="font-urdu" dir="rtl">© ۲۰۲۶ خبر ایکس۔ جملہ حقوق محفوظ ہیں۔</p>
         </div>
       </div>
     </footer>

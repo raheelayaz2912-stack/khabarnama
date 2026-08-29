@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useLanguagePref } from "@/lib/language-context";
+import { LogoMark } from "./LogoMark";
 
 const NAV = [
   { href: "/", label: "Home", ur: "ہوم" },
@@ -23,12 +24,20 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 bg-paper/95 backdrop-blur border-b border-line">
       <div className="mx-auto max-w-shell px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <Link href="/" className="flex items-baseline gap-2 shrink-0">
-            <span className="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-ink">
-              Khabarnama
-            </span>
-            <span className="font-urdu text-xl sm:text-2xl text-green leading-none" dir="rtl">
-              خبرنامہ
+          <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            <LogoMark className="h-8 w-8 sm:h-9 sm:w-9" />
+            <span className="flex flex-col leading-none">
+              <span className="flex items-baseline gap-2">
+                <span className="font-display text-xl sm:text-2xl font-bold tracking-tight text-ink">
+                  KHABAR<span className="text-brass">X</span>
+                </span>
+                <span className="font-urdu text-lg sm:text-xl text-brass leading-none" dir="rtl">
+                  خبر ایکس
+                </span>
+              </span>
+              <span className="hidden sm:block font-mono text-[9px] tracking-[0.22em] uppercase text-ink/40 mt-1">
+                News · Now · Everywhere
+              </span>
             </span>
           </Link>
 
@@ -63,7 +72,7 @@ export function SiteHeader() {
                 onClick={() => setPref("en")}
                 aria-pressed={pref === "en"}
                 className={`px-3 py-1.5 transition-colors ${
-                  pref === "en" ? "bg-green text-paper" : "text-ink/70 hover:bg-paper-dim"
+                  pref === "en" ? "bg-green text-white" : "text-ink/70 hover:bg-paper-dim"
                 }`}
               >
                 English
@@ -73,7 +82,7 @@ export function SiteHeader() {
                 onClick={() => setPref("ur")}
                 aria-pressed={pref === "ur"}
                 className={`px-3 py-1.5 font-urdu transition-colors ${
-                  pref === "ur" ? "bg-green text-paper" : "text-ink/70 hover:bg-paper-dim"
+                  pref === "ur" ? "bg-green text-white" : "text-ink/70 hover:bg-paper-dim"
                 }`}
               >
                 اردو
@@ -108,8 +117,8 @@ export function SiteHeader() {
             ))}
             <div className="flex items-center gap-2 pt-3">
               <span className="text-xs uppercase tracking-wide text-ink/50 font-mono">Preview in</span>
-              <button onClick={() => setPref("en")} className={`text-sm px-2.5 py-1 rounded-full border ${pref === "en" ? "bg-green text-paper border-green" : "border-line-strong"}`}>English</button>
-              <button onClick={() => setPref("ur")} className={`text-sm px-2.5 py-1 rounded-full border font-urdu ${pref === "ur" ? "bg-green text-paper border-green" : "border-line-strong"}`}>اردو</button>
+              <button onClick={() => setPref("en")} className={`text-sm px-2.5 py-1 rounded-full border ${pref === "en" ? "bg-green text-white border-green" : "border-line-strong"}`}>English</button>
+              <button onClick={() => setPref("ur")} className={`text-sm px-2.5 py-1 rounded-full border font-urdu ${pref === "ur" ? "bg-green text-white border-green" : "border-line-strong"}`}>اردو</button>
             </div>
           </nav>
         </div>
