@@ -33,6 +33,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${category} News`,
     description: `Latest ${category} news from KHABARX, reported in English and Urdu.`,
+    alternates: { canonical: `https://khabarx.vercel.app/category/${params.slug}` },
   };
 }
 

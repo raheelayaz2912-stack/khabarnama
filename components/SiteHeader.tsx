@@ -29,7 +29,7 @@ export function SiteHeader() {
             <span className="flex flex-col leading-none">
               <span className="flex items-baseline gap-2">
                 <span className="font-display text-xl sm:text-2xl font-bold tracking-tight text-ink">
-                  KHABAR<span className="text-brass">X</span>
+                  KHABARX
                 </span>
                 <span className="font-urdu text-lg sm:text-xl text-brass leading-none" dir="rtl">
                   خبر ایکس

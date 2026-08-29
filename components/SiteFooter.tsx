@@ -42,7 +42,7 @@ export function SiteFooter() {
             <div className="flex items-center gap-2">
               <LogoMark className="h-7 w-7" />
               <span className="font-display text-lg font-bold text-ink">
-                KHABAR<span className="text-brass">X</span>
+                KHABARX
               </span>
             </div>
             <p className="mt-3 font-urdu text-base text-brass/80" dir="rtl">
