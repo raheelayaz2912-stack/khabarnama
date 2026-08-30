@@ -7,7 +7,6 @@ import { formatEnglishDateTime, formatUrduDateTime } from "@/lib/format";
 import { CategoryPill } from "@/components/CategoryPill";
 import { LanguageSeam } from "@/components/LanguageSeam";
 import { NewsCard } from "@/components/NewsCard";
-import { ShareButtons } from "@/components/ShareButtons";
 
 const SITE_URL = "https://khabarx.vercel.app";
 
@@ -191,11 +190,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           ))}
         </ul>
       </section>
-
-      {/* Share */}
-      <div className="mt-8">
-        <ShareButtons url={url} title={article.englishTitle} />
-      </div>
 
       {/* Related news */}
       {related.length > 0 && (

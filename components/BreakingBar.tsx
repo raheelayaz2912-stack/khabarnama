@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export function BreakingBar() {
   const latest = getAllSortedByDate().slice(0, 5);
+  if (latest.length === 0) return null;
   const items = [...latest, ...latest]; // duplicate for a seamless loop
 
   return (

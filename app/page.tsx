@@ -15,6 +15,22 @@ const RAILS: { category: Category; heading: string; urHeading: string }[] = [
 
 export default function HomePage() {
   const all = getAllSortedByDate();
+
+  if (all.length === 0) {
+    return (
+      <div className="mx-auto max-w-shell px-4 sm:px-6 py-24 text-center">
+        <p className="font-mono text-xs tracking-[0.14em] uppercase text-brass mb-3">KHABARX</p>
+        <h1 className="font-display text-3xl font-semibold text-ink">No stories published yet</h1>
+        <p className="font-urdu text-xl text-ink/50 mt-2" dir="rtl">
+          ابھی تک کوئی خبر شائع نہیں ہوئی۔
+        </p>
+        <p className="mt-4 text-ink/60 max-w-md mx-auto">
+          Check back soon — new stories will appear here as soon as they're published.
+        </p>
+      </div>
+    );
+  }
+
   const [lead, ...rest] = all;
   const latest = rest.slice(0, 4);
 
